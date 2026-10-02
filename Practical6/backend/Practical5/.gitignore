@@ -1,0 +1,4 @@
+node_modules/
+
+# Never commit the real .env — it contains your MongoDB connection string
+.env

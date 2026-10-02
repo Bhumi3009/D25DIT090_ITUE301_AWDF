@@ -1,0 +1,292 @@
+:root {
+  --canvas: #c9e8ef;
+  --card: #ffffff;
+  --ink: #0b0b0c;
+  --muted: #4b5563;
+  --number: #94a3b8;
+  --accent: #1d3557;
+  --accent-soft: #dbe6f0;
+  --line: #e8e8e8;
+
+  --display: 'Outfit', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card);
+  border-radius: 999px;
+  padding: 12px 20px;
+  box-shadow: 0 8px 24px rgba(29, 53, 87, 0.1);
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.navbar-links a.active {
+  color: var(--accent);
+}
+
+.navbar-cta {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 64px 8px 40px;
+}
+
+.hero-eyebrow {
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 20px;
+}
+
+.hero-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+  max-width: 14ch;
+}
+
+.hero-subtitle {
+  font-size: 17px;
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0 0 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 13px 24px;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 720px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bento-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.bento-card.span-3 {
+  grid-column: span 3;
+}
+
+@media (max-width: 720px) {
+  .bento-card.span-3 {
+    grid-column: span 1;
+  }
+}
+
+.card-number {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--number);
+  margin: 0 0 12px;
+}
+
+.card-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card-text {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.card-tech {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .skills-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.skill-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f3f5f7;
+  color: var(--ink);
+}
+
+.contact-card {
+  background: var(--accent);
+  color: #fff;
+}
+
+.contact-card .card-number {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-card .card-title {
+  font-size: 26px;
+}
+
+.contact-card .card-text {
+  color: #cdd8e5;
+  margin-bottom: 20px;
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 13px;
+  color: #4b5568;
+  padding: 24px 0 40px;
+}

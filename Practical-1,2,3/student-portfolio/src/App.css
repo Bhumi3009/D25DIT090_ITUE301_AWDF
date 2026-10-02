@@ -1,0 +1,152 @@
+:root.dark {
+  --canvas: #0b1524;
+  --card: #142236;
+  --ink: #eef3f8;
+  --muted: #8fa3b8;
+  --number: #4a6178;
+  --accent: #6fb7e0;
+  --accent-soft: #1e3450;
+  --line: #23364a;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  background: var(--accent-soft);
+  border: none;
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.fact-toggle {
+  margin: 0 0 40px;
+}
+
+.bento-grid {
+  margin-top: 8px;
+  .projects-search {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 24px;
+  outline: none;
+}
+
+.projects-search:focus {
+  border-color: #ff6a3d;
+}
+
+.card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: #ff6a3d;
+}
+}
+
+.quick-fact {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px 20px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.dark .skill-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-family: var(--body);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.char-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: -8px;
+}
+
+.live-preview {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.not-found-page {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.not-found-page h1 {
+  font-size: 72px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.contact-card {
+  background: rgba(111, 183, 224, 0.2);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+}
+
+.contact-card .card-title {
+  font-size: 26px;
+  color: var(--ink);
+}

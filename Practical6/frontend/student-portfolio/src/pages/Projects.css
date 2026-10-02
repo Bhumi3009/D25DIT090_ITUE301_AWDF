@@ -1,0 +1,66 @@
+.projects-section {
+  padding: 40px 24px;
+}
+
+.projects-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.projects-search {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 24px;
+  outline: none;
+}
+
+.projects-search:focus {
+  border-color: #ff6a3d;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  display: block;
+  padding: 18px;
+  border-radius: 16px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #ff6a3d;
+  transform: translateY(-2px);
+}
+
+.project-name {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.project-stars {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #9a9a9a;
+  font-size: 0.85rem;
+}
+
+.projects-empty {
+  color: #9a9a9a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
