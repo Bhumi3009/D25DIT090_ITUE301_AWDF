@@ -1,0 +1,14 @@
+{
+  "name": "practical-7-task-manager-auth",
+  "version": "1.0.0",
+  "description": "ITUE301 Practical 7: Authentication and Middleware Pipeline - Charusat CSPIT-IT",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev"
+  },
+  "author": "D25DIT090",
+  "license": "ISC"
+}

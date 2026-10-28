@@ -1,0 +1,220 @@
+/* Bento Card & Task Styling */
+.tasks-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-welcome-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.welcome-title {
+  margin: 0 0 4px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.welcome-subtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.jwt-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-card {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #f3f4f6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #f3f4f6;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #3b82f6;
+}
+
+.task-form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.task-card {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.15s ease, border-color 0.2s;
+}
+
+.task-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.task-card.task-completed {
+  opacity: 0.65;
+}
+
+.task-card.task-completed .card-title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-card.task-pending {
+  opacity: 0.5;
+  border-style: dashed;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.task-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.task-checkbox .card-title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.priority-low {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.priority-medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.priority-high {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+.project-points {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.task-delete {
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.task-delete:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.tasks-empty {
+  color: #9ca3af;
+  text-align: center;
+  padding: 40px;
+}

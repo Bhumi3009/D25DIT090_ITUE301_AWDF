@@ -1,0 +1,4 @@
+Props
+One of the most important topics.
+Props mean
+Parent sends data to Child.
